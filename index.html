@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- font link  -->
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1st row -->
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="java">
+              <h4>1.click the button change change text </h4>
+              <button type="button" class="btn btn-dark border" onclick="textChange()"> click me</button>
+              <p class="mt-3" id="tc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, est autem!</p> <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4>2.Date/Time /Mouseover</h4>
+            <button type="button" class="btn btn-primary border" onmouseover="dateTime()"> click me</button> <br>
+            <p class="mt-3" id="date">show</p>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4>3. text color Change/Onmouseenter </h4>
+            <p class="mt-3" id="color" onmouseenter="colorChange()">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit.lorem
+            Lorem ipsum dolor sit amet consectetur.
+            </p> <br>
+          </div>
+        </div>
+        <!-- 2ND ROW  -->
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4>4. text show/hide</h4>
+            <button onclick="textHide()" class="btn btn-primary">hide</button>
+            <button onclick="textShow()" class="btn btn-dark">show</button>
+            <p id="sh" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum!
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>    
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4>5. class slector</h4>
+            <button onclick="nemeClass()" class="btn btn-primary"> calling by class</button>
+            <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
+            <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
+            <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
+            <h6 class="h6">Lorem ipsum dolor sit amet.</h6>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4>6.bullb.on/off</h4>
+             <button onclick="bullbOff()" class="btn btn-dark">off</button>
+             <img  id="bl" src="images/pic_bulboff.gif" alt="">
+             <button onclick="bullbOn()"  class="btn btn-primary">On</button>
+          </div>
+        </div>
+        <!-- 3 row -->
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <form id="form">
+              <label>
+               <h4>7. Some text</h4>
+                <input type="text" placeholder="text input" />
+              </label>
+              <label>
+               <h4>Password:</h4> 
+                <input type="password" placeholder="password" />
+              </label>
+            </form>
+            
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="p_8">
+              <h1>8.My First Web Page</h1>
+              <p>Alart messege</p>
+              <button onclick="alert(fahim)"  class="btn btn-primary">try it</button>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <p> Click the following button to see the effect. </p>
+             <button class="btn btn-primary" onclick = "fun()">Click me</button>
+          </div>
+
+        </div>
+          <!-- 3 row  -->
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>Mouse over/ Mouse out</h4>
+              <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+              style="background-color:#D94A38;width:120px;height:150px;padding:40px;">
+             <h6>Mouse Over Me</h6></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>The onmousedown, onmouseup and onclick Events</h4>
+              <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+               style="background-color:rgb(161, 173, 186);width:100px;height:160px;padding:40px;">
+                <h4>Click Me</h4>
+              </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>font size</h4>
+              <h6 id="fontsize" onmouseover="font()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum?</h6>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>background-color change</h4>
+              <h6 id="bg" style="background-color: aqua; height: 100px; width:100px ;" onmousedown=" background()">background-color</h6>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>font color change</h4>
+              <h6  id="fc" onmouseleave="color()" style="color: black;">Lorem ipsum dolor sit amet consectetur.</h6>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>ondbl click</h4>
+              <h6 id="dbl" ondblclick="dblClik()">Lorem ipsum dolor sit amet consectetur.</h6>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>Calculate</h4>
+              <button onclick="dataAddition()" class="btn btn-primary">sum</button>
+              <h5 id="sumee">output</h5>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>Multiplying</h4>
+              <button ondblclick="Multiplying()" class="btn btn-primary">Multiplying</button>
+              <h5 id="Multiplying">output</h5>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h4>minus</h4>
+              <button ondblclick="minus()" class="btn btn-primary">minus</button>
+              <h5 id="minus">output</h5>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h2 style="color: blue;">User input </h2>
+                <button  onclick="userInput()" class="btn btn-primary">User input </button>
+                <h4 id="input">out put</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h2 style="color: rgb(155, 155, 197);">User input </h2>
+                <button  onclick="userInpu()" class="btn btn-primary">User input </button>
+                <h4 id="User">out put</h4>
+            </div>
+              <!-- gon -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h2 style="color: rgb(7, 250, 72);">User input </h2>
+                <button  onclick="userInput1()" class="btn btn-primary">User input </button>
+                <h4 id="User1">out put</h4>
+            </div>
+            <!-- vag -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h2 style="color: rgb(66, 108, 117);">User input </h2>
+                <button  onclick="userInput2()" class="btn btn-primary">User input </button>
+                <h4 id="User2">out put</h4>
+            </div>
+            <!-- mo -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <h2 style="color: rgb(58, 58, 72);">User input </h2>
+                <button  onclick="userInput3()" class="btn btn-primary">User input </button>
+                <h4 id="User3">out put</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+             <h2 style="color: blue;">Mark userInpu</h2>
+             <button  onclick="marks()" class="btn btn-primary">marks </button>
+             <h4 style="color: red;" id="marks-out-put">out put</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+             <h2>loop </h2>
+             <button class="btn btn-primary" onclick="loop()">Loop</button>
+             <h4 id="loop" >Loop-out-put</h4>
+             </div>
+
+             <div class="col-lg-4 col-md-4 col-sm-4">
+              <h2>userInpu </h2>
+              <button class="btn btn-primary" onclick="us()">for-Loop+sum</button>
+              <h4 id="we" >out-put</h4>
+              </div>
+
+          </div>
+
+
+            
+
+
+
+
+
+          <!-- jquery -->
+
+          <h1 style="text-align: center;">jquery</h1>
+            <div class="row mt-5">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <h4>alert</h4>
+                <button class="btn btn-primary alt">Click</button>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <h4>slide up</h4>
+                <h5 style="color: red; ">Lorem ipsum dolor sit amet.</h5>
+                <h5 style="color: red; ">Lorem ipsum dolor sit amet.</h5>
+                <h5 style="color: red; ">Lorem ipsum dolor sit amet.</h5>
+                <h5 style="color: red; ">Lorem ipsum dolor sit amet.</h5>
+
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <h4>text show/hide</h4>
+                <button id="show" class="btn btn-info">show text</button>
+                <button id="hide" class="btn btn-info">Hide text</button>
+                <h6 id="h6">Lorem ipsum dolor sit amet, consectetur adipisicing.</h6>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <h4>Toggle</h4>
+                <button id="Toggle" class="btn btn-dark" >Toggle</button>
+                <h5 id="togg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius.</h5>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="qus">
+                  <h4>Lorem, ipsum dolor sit amet consectetur adipisicing.?</h4>
+                </div>
+                <div class="ans">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Iste neque repudiandae dolore cumque labore harum id sunt assumenda rerum asperiores!</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <h4>Animation</h4>
+                <button id="run" class="btn btn-dark" >Run</button>
+                <h5 id="block">Welcome</h5>
+              </div>
+
+
+              <p><button>Run</button></p>
+                <div class="first"></div>
+                <div class="second"></div>
+             
+
+              
+
+
+            </div>
+               
+
+
+
+
+
+
+            
+    </div>
+    <div class="row">
+      
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"> </script>
+    <script src="js/script.js"> </script>
+
+  </body>
+</html>

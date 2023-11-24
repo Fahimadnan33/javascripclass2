@@ -1,0 +1,35 @@
+.qus{
+    padding: 16px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.ans{
+    margin-top:5px;
+    padding: 16px;
+    background-color: blueviolet;
+    display: none;
+}
+
+#wel{
+    background-color: aquamarine;
+    width: 110px;
+    border: 1px solid red;
+}
+
+{
+    position: absolute;
+   
+    float: left;
+  }
+.first {
+    width: 60px;
+    height: 60px;
+    background-color: #3f3;
+    left: 0;
+  }
+  .second {
+    width: 60px;
+    height: 60px;
+    background-color: #33f;
+    left: 80px;
+  }
